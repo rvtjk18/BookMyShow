@@ -1,0 +1,41 @@
+﻿<Window x:Class="BookMyShow.Movies"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookMyShow"
+        mc:Ignorable="d"
+        Title="Movies" Height="500" Width="500">
+    <Grid >
+        <StackPanel Orientation="Horizontal" Margin="10,200,33,21" >
+            <Button x:Name="BaahubaliBtn"  Margin="10" Height="120" Width="200" Click="BaahubaliBtn_Click" Background="{x:Null}" BorderThickness="0">
+                <StackPanel>
+                    <Image Source="C:\Users\H234404\Pictures\bh2.jpg" Height="99" Width="219"/>
+
+                </StackPanel>
+            </Button>
+            <Button x:Name="MummyBtn" Margin="10" Height="170" Width="200" Click="MummyBtn_Click" Background="{x:Null}" BorderThickness="0">
+                <StackPanel>
+                    <Image Source="C:\Users\H234404\Pictures\mummy.jpg" Height="143" Width="200"/>
+
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        
+        <ComboBox x:Name="Date" Text="19/06/2017" HorizontalAlignment="Left" Margin="175,72,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+
+            <ComboBoxItem Content="19/06/2017"/>
+            <ComboBoxItem Content="20/06/2017"/>
+            <ComboBoxItem Content="21/06/2017"/>
+            <ComboBoxItem Content="22/06/2017"/>
+            <ComboBoxItem Content="23/06/2017"/>
+            <ComboBoxItem Content="24/06/2017"/>
+            <ComboBoxItem Content="25/06/2017"/>
+            <ComboBoxItem Content="26/06/2017"/>
+        </ComboBox>
+        <Label Content="Select Date" HorizontalAlignment="Left" Margin="66,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.331,-0.885"/>
+
+
+
+    </Grid>
+</Window>

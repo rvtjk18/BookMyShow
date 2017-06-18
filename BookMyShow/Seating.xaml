@@ -1,0 +1,34 @@
+﻿<Window x:Class="BookMyShow.Seating"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookMyShow"
+        mc:Ignorable="d"
+        Title="Seating" Height="379.449" Width="646.398">
+    <Grid Name="grid1">
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Number of seats" Margin="10" />
+            <StackPanel Margin="10">
+                <ComboBox Width="100" SelectionChanged="CB_SelectionChanged">
+                    <ComboBoxItem>1</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>3</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <Label Name="tickerPrice" Content="*Actual ticket pricing may vary.Pricing will be shown during payment" Margin="10"></Label>
+        </StackPanel>
+
+        <StackPanel Name="stackpanel1" Orientation="Vertical" Margin="10,50,10,0" Height="268" VerticalAlignment="Top">
+
+        </StackPanel>
+        <Button Content="Confirm Booking" Click="paymentBtnClick" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Margin="0,0,45,10"/>
+        <Button Content="Cancel" HorizontalAlignment="Right" Margin="0,0,150,10" VerticalAlignment="Bottom" Width="75"/>
+
+
+
+    </Grid>
+</Window>
